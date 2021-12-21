@@ -1,0 +1,90 @@
+﻿from PyQt5 import QtCore, QtGui, QtWidgets
+import image
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(1010, 829)
+        MainWindow.setStyleSheet("background-color: rgb(255, 255, 127);")
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.centralwidget)
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.widget_2 = QtWidgets.QWidget(self.centralwidget)
+        self.widget_2.setObjectName("widget_2")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.widget_2)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem)
+        spacerItem1 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.horizontalLayout.addItem(spacerItem1)
+        self.widget = QtWidgets.QWidget(self.widget_2)
+        self.widget.setObjectName("widget")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.widget)
+        self.verticalLayout_2.setSizeConstraint(QtWidgets.QLayout.SetDefaultConstraint)
+        self.verticalLayout_2.setContentsMargins(11, -1, -1, -1)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.label = QtWidgets.QLabel(self.widget)
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap((":/q/waitan.jpg")))
+        self.label.setObjectName("label")
+        self.verticalLayout_2.addWidget(self.label)
+        self.button = QtWidgets.QPushButton(self.widget)
+        self.button.setStyleSheet("QPushButton{background:#6C6C6C;color:red;box-shadow: 1px 1px 3px rgba(0,0,0,0.3);font-size:30px;border-radius: 14px;font-family: 微软雅黑;}")
+        self.button.setObjectName("button")
+        self.verticalLayout_2.addWidget(self.button)
+        self.horizontalLayout.addWidget(self.widget)
+        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem2)
+        self.horizontalLayout_2.addWidget(self.widget_2)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "余翎瑞-小菜鸡-213"))
+        self.button.setText(_translate("MainWindow", "播放"))
+
+class Ui_Dialog(object):
+    def setupUi(self, Dialog):
+        Dialog.setObjectName("Dialog")
+        Dialog.resize(400, 300)
+        self.pushButton = QtWidgets.QPushButton(Dialog)
+        self.pushButton.setGeometry(QtCore.QRect(70, 220, 75, 23))
+        self.pushButton.setObjectName("pushButton")
+        self.pushButton_2 = QtWidgets.QPushButton(Dialog)
+        self.pushButton_2.setGeometry(QtCore.QRect(220, 220, 75, 23))
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.checkBox = QtWidgets.QCheckBox(Dialog)
+        self.checkBox.setGeometry(QtCore.QRect(70, 180, 141, 16))
+        self.checkBox.setObjectName("checkBox")
+        self.lineEdit = QtWidgets.QLineEdit(Dialog)
+        self.lineEdit.setGeometry(QtCore.QRect(130, 56, 181, 20))
+        self.lineEdit.setObjectName("lineEdit")
+        self.lineEdit_2 = QtWidgets.QLineEdit(Dialog)
+        self.lineEdit_2.setGeometry(QtCore.QRect(130, 110, 181, 20))
+        self.lineEdit_2.setObjectName("lineEdit_2")
+        self.label = QtWidgets.QLabel(Dialog)
+        self.label.setGeometry(QtCore.QRect(70, 60, 54, 12))
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(Dialog)
+        self.label_2.setGeometry(QtCore.QRect(70, 110, 54, 12))
+        self.label_2.setObjectName("label_2")
+
+        self.retranslateUi(Dialog)
+        QtCore.QMetaObject.connectSlotsByName(Dialog)
+
+    def retranslateUi(self, Dialog):
+        _translate = QtCore.QCoreApplication.translate
+        Dialog.setWindowTitle(_translate("Dialog", "小菜鸡"))
+        self.pushButton.setText(_translate("Dialog", "取消"))
+        self.pushButton_2.setText(_translate("Dialog", "确定"))
+        self.checkBox.setText(_translate("Dialog", "记住用户名和密码"))
+        self.label.setText(_translate("Dialog", "用户名："))
+        self.label_2.setText(_translate("Dialog", "密码："))
