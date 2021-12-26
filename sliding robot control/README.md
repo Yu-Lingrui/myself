@@ -1,1 +1,10 @@
-
+# 基于移动机器人的滑膜轨迹跟踪控制
+![image](https://user-images.githubusercontent.com/83021418/147403019-6e6d1772-f33b-4383-b5de-9042582c0e68.png)
+![image](https://user-images.githubusercontent.com/83021418/147403038-d70db0b0-38fb-4ff8-9f5f-e66d2763b011.png)
+![image](https://user-images.githubusercontent.com/83021418/147403050-2e5178bd-f3a6-4e38-97c9-713b614d4ee1.png)
+![image](https://user-images.githubusercontent.com/83021418/147403060-736284d4-4c6d-4c10-9a47-6df1ada12bd5.png)
+![image](https://user-images.githubusercontent.com/83021418/147403068-e83707f7-f8a3-47bf-8d8e-6f23ea0bcd95.png)
+![image](https://user-images.githubusercontent.com/83021418/147403080-18b02a29-6d34-4966-a659-e3dcf87d17c9.png)
+![image](https://user-images.githubusercontent.com/83021418/147403104-1046c02e-1a23-4fdb-9909-5c0431585a7a.png)
+![image](https://user-images.githubusercontent.com/83021418/147403129-d477822d-2d98-4a0f-941d-971d07b42a6b.png)
+![image](https://user-images.githubusercontent.com/83021418/147403135-b5b9d08b-14eb-4bc5-a093-053f40782632.png)
