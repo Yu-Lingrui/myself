@@ -1,0 +1,313 @@
+PYTHONUNBUFFERED=1
+LD_LIBRARY_PATH=/usr/local/seccomponent/lib:/home/ma-user/anaconda/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/cuda/extras/CUPTI/lib64:/usr/local/lib:/usr/local/openmpi/lib:/usr/lib/aarch64-linux-gnu/hdf5/serial:/usr/local/Ascend/nnae/latest/fwkacllib/lib64:/usr/local/Ascend/driver/lib64/common:/usr/local/Ascend/driver/lib64/driver::/usr/local/seccomponent/lib/:/usr/local/seccomponent/lib/openssl/
+TOOLCHAIN_HOME=HOST_ASCEND_BASE/toolkit
+MA_ENGINE_VERSION=tensorflow_1.15-cann_5.0.2-py_3.7-euler_2.8.3-aarch64
+MA_NUM_HOSTS=1
+VC_WORKER_HOSTS=ma-job-6fe41aa6-3e54-46ca-a22f-f553377b05ac-worker-0.ma-job-6fe41aa6-3e54-46ca-a22f-f553377b05ac
+MA_TRAINING_TOOLKIT_MOUNT_PATH=/modelarts-job-6fe41aa6-3e54-46ca-a22f-f553377b05ac
+VK_TASK_INDEX=0
+TF_PLUGIN_PKG=/usr/local/Ascend/tfplugin/latest/tfplugin/python/site-packages
+_=/usr/bin/env
+MA_SCRIPT_INTERPRETER=
+HOSTNAME=ma-job-6fe41aa6-3e54-46ca-a22f-f553377b05ac-worker-0
+OLDPWD=/home/ma-user/infer
+PIP_OPTS=--trusted-host szg1.artifactory.inhuawei.com -i http://szg1.artifactory.inhuawei.com/artifactory/api/pypi/cbu-pypi-public/simple/ --user
+MA_COLLECT_CORE_FILE=1
+NPU-VISIBLE-DEVICES=5
+ENV_NAME=TensorFlow-1.15-arm
+JAVA_HOME=/home/ma-user/jdk1.8.0_212
+MA_CURRENT_IP=172.16.0.150
+MA_MOUNT_PATH=/home/ma-user/modelarts
+CLASS_PATH=.:/home/ma-user/jdk1.8.0_212/lib/dt.jar:/home/ma-user/jdk1.8.0_212/lib/tools.jar:/home/ma-user/jdk1.8.0_212/jre/lib
+ASCEND_AICPU_PATH=/usr/local/Ascend/nnae/latest
+MA_ENGINE_TYPE=ascend-powered-engine
+MA_HOME=/home/ma-user
+KUBERNETES_PORT_443_TCP_PROTO=tcp
+KUBERNETES_PORT_443_TCP_ADDR=10.247.0.1
+MA_VJ_NAME=ma-job-6fe41aa6-3e54-46ca-a22f-f553377b05ac
+TBE_IMPL_PATH=/usr/local/Ascend/nnae/latest/opp/op_impl/built-in/ai_core/tbe
+FE_FLAG=1
+MOX_VERSION_LOGGED=1
+MA_PIP_URL=http://repo.myhuaweicloud.com/repository/pypi/simple/
+FWK_PYTHON_PATH=/usr/local/Ascend/nnae/latest/fwkacllib/python/site-packages
+KUBERNETES_PORT=tcp://10.247.0.1:443
+PWD=/home/ma-user/modelarts/workspace/device0
+ASCEND_DEVICE_ID=0
+RANK_ID=0
+MA_DIAG_MODE_ENV=
+HOME=/home/ma-user
+LC_CTYPE=C.UTF-8
+_STDBUF_E=L
+DEVICE_ID=0
+_STDBUF_O=L
+S3_USE_HTTPS=1
+MA_LOG_DIR=/home/ma-user/modelarts/log
+RANK_SIZE=1
+KUBERNETES_SERVICE_PORT_HTTPS=443
+SITE_PACKAGES_PATH=/home/ma-user/miniconda3/envs/TensorFlow-1.15-arm/lib/python3.7/site-packages
+KUBERNETES_PORT_443_TCP_PORT=443
+IS_NEW_IMAGE_FRAMEWORK=true
+RANK_TABLE_FILE=/home/ma-user/rank_table/jobstart_hccl.json
+MA_NUM_GPUS=1
+S3_ENDPOINT=obs.cn-north-4.myhuaweicloud.com
+SCC_CONFIG_PATH=/home/ma-user/modelarts/scc/conf_10x/scc.conf
+GLOG_v=2
+MA_CURRENT_INSTANCE_ID=6dcaf08a-2911-46e0-adcc-8415f9b249a1
+FMK_WORKSPACE=/home/ma-user/modelarts/user-job-dir/workspace
+MA_SCC_PYTHON_ADAPTER=/home/ma-user/modelarts/scc
+MA_PIP_HOST=repo.myhuaweicloud.com
+MODELARTS_MODEL_PATH=/home/ma-user/infer/model/1
+S3_VERIFY_SSL=0
+PAAS_POD_ID=6dcaf08a-2911-46e0-adcc-8415f9b249a1
+KUBERNETES_PORT_443_TCP=tcp://10.247.0.1:443
+OPTION_EXEC_EXTERN_PLUGIN_PATH=/usr/local/Ascend/fwkacllib/lib64/plugin/opskernel/libfe.so:/usr/local/Ascend/fwkacllib/lib64/plugin/opskernel/libaicpu_plugin.so:/usr/local/Ascend/fwkacllib/lib64/plugin/opskernel/librts_engine.so:/usr/local/Ascend/fwkacllib/lib64/plugin/opskernel/libge_local_engine.so
+ASCEND_PROCESS_LOG_PATH=/home/ma-user/modelarts/log/modelarts-job-6fe41aa6-3e54-46ca-a22f-f553377b05ac/ascend/process_log/rank_0
+MA_INPUTS={"inputs": [{"parameter": {"label": "data_url", "value": "/home/ma-user/modelarts/inputs/data_url_0"}, "data_source": {"obs": {"obs_url": "/canncampus-ylr/dataset/Flowers-Data-Set/"}}}]}
+VC_TASK_INDEX=0
+PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
+MODELARTS_BATCH_PREDICT_URL=http://127.0.0.1:8080
+ASCEND_OPP_PATH=/usr/local/Ascend/nnae/latest/opp
+MA_RUN_MODE_ENV=
+HCCL_CONNECT_TIMEOUT=1800
+VC_WORKER_NUM=1
+JOB_ID=modelarts-job-6fe41aa6-3e54-46ca-a22f-f553377b05ac
+MA_PYTHON_VERSION=3
+SHLVL=5
+DEPLOY_MODE=1
+ANACONDA_DIR=/home/ma-user/miniconda3
+PYTHONPATH=/home/ma-user/modelarts/user-job-dir:/usr/local/Ascend/nnae/latest/pyACL/python/site-packages/acl:/usr/local/Ascend/nnae/latest/fwkacllib/python/site-packages:/usr/local/Ascend/nnae/latest/fwkacllib/python/site-packages/auto_tune.egg:/usr/local/Ascend/nnae/latest/fwkacllib/python/site-packages/schedule_search.egg:/usr/local/Ascend/tfplugin/latest/tfplugin/python/site-packages:/usr/local/Ascend/nnae/latest/opp/op_impl/built-in/ai_core/tbe:/usr/local/seccomponent/lib:/home/ma-user/infer/model/1
+MA_OUTPUTS={"outputs": [{"parameter": {"label": "train_url", "value": "/home/ma-user/modelarts/outputs/train_url_0"}, "data_source": {"obs": {"obs_url": "/canncampus-ylr/output/canncampus-alexnet_session-03-29-11-32/output/"}}}]}
+MA_DETECT_ITEM={"ascend_check":1,"disk_size_check":1,"dns_check":1}
+MA_CURRENT_INSTANCE_NAME=ma-job-6fe41aa6-3e54-46ca-a22f-f553377b05ac-worker-0
+KUBERNETES_SERVICE_PORT=443
+ME_TBE_PLUGIN_PATH=/usr/local/Ascend/opp/framework/built-in/tensorflow/
+CREDENTIAL_PROFILES_FILE=/run/secrets/modelarts/user/config
+MA_JOB_DIR=/home/ma-user/modelarts/user-job-dir
+JRE_HOME=/home/ma-user/jdk1.8.0_212/jre
+MA_TERMINATION_MESSAGE_PATH=/home/ma-user/modelarts/log/termination-log
+PATH=/home/ma-user/anaconda/bin:/home/ma-user/jdk1.8.0_212/bin:/home/ma-user/jdk1.8.0_212/jre/bin:/home/ma-user/ddk/bin/x86_64-linux-gcc5.4:/usr/local/openmpi/bin:/home/ma-user/miniconda3/envs/TensorFlow-1.15-arm/bin:/usr/local/ma/python3.7/bin/:/usr/local/Ascend/nnae/latest/fwkacllib/ccec_compiler/bin:/usr/local/Ascend/nnae/latest/fwkacllib/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/ma-user/.local/bin
+MA_TASK_NAME=worker
+MA_NAMESPACE=default
+DLS_LOCAL_CACHE_PATH=/cache
+LD_PRELOAD=/usr/libexec/coreutils/libstdbuf.so
+KUBERNETES_SERVICE_HOST=10.247.0.1
+AICPU_FLAG=1
+_MEMARTS_CONFIG_PATH=/home/ma-user/modelarts/sdk.json
+0
+===>>>code_dir:/home/ma-user/modelarts/user-job-dir/code, work_dir:/home/ma-user/modelarts/workspace/device0
+--------config----------
+key:train_url: value:/home/ma-user/modelarts/outputs/train_url_0/
+key:data_url: value:/home/ma-user/modelarts/inputs/data_url_0/
+key:modelarts_data_dir: value:/cache/flower-dataset
+key:modelarts_result_dir: value:/cache/result
+--------config----------
+===>>>Copy files from obs:/home/ma-user/modelarts/inputs/data_url_0/ to modelarts dir:/cache/flower-dataset
+INFO:root:pid: None.	1000/3670
+INFO:root:pid: None.	2000/3670
+INFO:root:pid: None.	3000/3670
+===>>>Copy from obs to modelarts, time use:1(s)
+===>>>Files: ['val', 'train']
+bash command: bash /home/ma-user/modelarts/user-job-dir/code/scripts/run_1p.sh /home/ma-user/modelarts/user-job-dir/code /cache/flower-dataset /cache/result /home/ma-user/modelarts/outputs/train_url_0/
+/home/ma-user/anaconda/lib/python3.7/site-packages/absl/flags/_validators.py:206: UserWarning: Flag --dataset has a non-None default value; therefore, mark_flag_as_required will pass even if flag is not specified in the command line!
+  'command line!' % flag_name)
+/home/ma-user/anaconda/lib/python3.7/site-packages/absl/flags/_validators.py:206: UserWarning: Flag --result has a non-None default value; therefore, mark_flag_as_required will pass even if flag is not specified in the command line!
+  'command line!' % flag_name)
+/home/ma-user/anaconda/lib/python3.7/site-packages/absl/flags/_validators.py:206: UserWarning: Flag --obs_dir has a non-None default value; therefore, mark_flag_as_required will pass even if flag is not specified in the command line!
+  'command line!' % flag_name)
+WARNING:tensorflow:From /home/ma-user/modelarts/user-job-dir/code/train.py:173: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+WARNING:tensorflow:From /home/ma-user/modelarts/user-job-dir/code/train.py:53: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+W0329 12:08:33.540849 281472962355568 module_wrapper.py:139] From /home/ma-user/modelarts/user-job-dir/code/train.py:53: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+WARNING:tensorflow:From /home/ma-user/modelarts/user-job-dir/code/train.py:53: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+W0329 12:08:33.541127 281472962355568 module_wrapper.py:139] From /home/ma-user/modelarts/user-job-dir/code/train.py:53: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+WARNING:tensorflow:From /home/ma-user/modelarts/user-job-dir/code/train.py:54: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+W0329 12:08:33.541339 281472962355568 module_wrapper.py:139] From /home/ma-user/modelarts/user-job-dir/code/train.py:54: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+INFO:tensorflow:**********
+I0329 12:08:33.541442 281472962355568 train.py:54] **********
+===>>>dataset:/cache/flower-dataset
+===>>>result:/cache/result
+===>>>train_step:2
+? = False
+alsologtostderr = False
+batch_size = 32
+chip = npu
+dataset = /cache/flower-dataset
+decay_rate = 0.9
+decay_step = 500
+help = False
+helpfull = False
+helpshort = False
+helpxml = False
+learning_rate = 0.001
+log_dir = 
+logger_levels = {}
+logtostderr = False
+npu_auto_tune = False
+npu_dump_data = False
+npu_dump_graph = False
+npu_profiling = False
+num_classes = 5
+obs_dir = /home/ma-user/modelarts/outputs/train_url_0/
+only_check_args = False
+op_conversion_fallback_to_while_loop = False
+pdb = False
+pdb_post_mortem = False
+platform = modelarts
+profile_file = None
+result = /cache/result
+resume_path = None
+run_with_pdb = False
+run_with_profiling = False
+save_step = 5
+showprefixforinfo = True
+stderrthreshold = fatal
+test_random_seed = 301
+test_randomize_ordering_seed = 
+test_srcdir = 
+test_tmpdir = /tmp/absl_testing
+train_step = 2
+use_cprofile_for_profiling = True
+v = 0
+verbosity = 0
+xml_output_file = 
+  0%|          | 0/3306 [00:00<?, ?it/s]100%|██████████| 3306/3306 [00:00<00:00, 717498.14it/s]
+Data Loading finished!
+Label dict:  {'sunflowers': 0, 'dandelion': 1, 'roses': 2, 'daisy': 3, 'tulips': 4}
+INFO:tensorflow:Label dict = {'sunflowers': 0, 'dandelion': 1, 'roses': 2, 'daisy': 3, 'tulips': 4}
+I0329 12:08:33.552942 281472962355568 train.py:67] Label dict = {'sunflowers': 0, 'dandelion': 1, 'roses': 2, 'daisy': 3, 'tulips': 4}
+WARNING:tensorflow:From /home/ma-user/modelarts/user-job-dir/code/train.py:69: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+W0329 12:08:33.553168 281472962355568 module_wrapper.py:139] From /home/ma-user/modelarts/user-job-dir/code/train.py:69: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /home/ma-user/modelarts/user-job-dir/code/model.py:20: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W0329 12:08:33.560170 281472962355568 module_wrapper.py:139] From /home/ma-user/modelarts/user-job-dir/code/model.py:20: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+=========conv1======= Tensor("conv1/Relu:0", shape=(?, 56, 56, 96), dtype=float32)
+WARNING:tensorflow:From /home/ma-user/modelarts/user-job-dir/code/model.py:34: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+W0329 12:08:33.588553 281472962355568 module_wrapper.py:139] From /home/ma-user/modelarts/user-job-dir/code/model.py:34: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+========lrn1========= Tensor("pool1/pool1:0", shape=(?, 27, 27, 96), dtype=float32)
+========conv2======= Tensor("conv2/Relu:0", shape=(?, 27, 27, 256), dtype=float32)
+========pool2======== Tensor("pool2/pool1:0", shape=(?, 13, 13, 256), dtype=float32)
+========conv3======== Tensor("conv3/Relu:0", shape=(?, 13, 13, 384), dtype=float32)
+========conv4======== Tensor("conv4/Relu:0", shape=(?, 13, 13, 384), dtype=float32)
+========conv5======== Tensor("conv5/Relu:0", shape=(?, 13, 13, 256), dtype=float32)
+========pool5======== Tensor("pool3/MaxPool:0", shape=(?, 6, 6, 256), dtype=float32)
+========fc1======== Tensor("fc1/DropOutDoMask:0", shape=(?, 2048), dtype=float32)
+========fc2======== Tensor("fc2/DropOutDoMask:0", shape=(?, 2048), dtype=float32)
+========out======== Tensor("output/outputs:0", shape=(?, 5), dtype=float32)
+WARNING:tensorflow:From /home/ma-user/modelarts/user-job-dir/code/train.py:76: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+W0329 12:08:35.522106 281472962355568 deprecation.py:323] From /home/ma-user/modelarts/user-job-dir/code/train.py:76: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+WARNING:tensorflow:From /home/ma-user/modelarts/user-job-dir/code/train.py:78: The name tf.train.exponential_decay is deprecated. Please use tf.compat.v1.train.exponential_decay instead.
+
+W0329 12:08:35.567724 281472962355568 module_wrapper.py:139] From /home/ma-user/modelarts/user-job-dir/code/train.py:78: The name tf.train.exponential_decay is deprecated. Please use tf.compat.v1.train.exponential_decay instead.
+
+WARNING:tensorflow:From /home/ma-user/modelarts/user-job-dir/code/train.py:79: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+W0329 12:08:35.575802 281472962355568 module_wrapper.py:139] From /home/ma-user/modelarts/user-job-dir/code/train.py:79: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+WARNING:tensorflow:From /home/ma-user/modelarts/user-job-dir/code/train.py:86: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+W0329 12:08:36.077643 281472962355568 module_wrapper.py:139] From /home/ma-user/modelarts/user-job-dir/code/train.py:86: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+WARNING:tensorflow:From /home/ma-user/modelarts/user-job-dir/code/train.py:88: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+W0329 12:08:36.081878 281472962355568 module_wrapper.py:139] From /home/ma-user/modelarts/user-job-dir/code/train.py:88: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+INFO:tensorflow:chip is [npu]
+I0329 12:08:36.083037 281472962355568 cfg.py:23] chip is [npu]
+WARNING:tensorflow:From /home/ma-user/modelarts/user-job-dir/code/cfg.py:35: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+W0329 12:08:36.083254 281472962355568 module_wrapper.py:139] From /home/ma-user/modelarts/user-job-dir/code/cfg.py:35: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From /home/ma-user/modelarts/user-job-dir/code/train.py:93: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+W0329 12:08:36.083549 281472962355568 module_wrapper.py:139] From /home/ma-user/modelarts/user-job-dir/code/train.py:93: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /home/ma-user/modelarts/user-job-dir/code/train.py:94: The name tf.local_variables_initializer is deprecated. Please use tf.compat.v1.local_variables_initializer instead.
+
+W0329 12:08:36.131657 281472962355568 module_wrapper.py:139] From /home/ma-user/modelarts/user-job-dir/code/train.py:94: The name tf.local_variables_initializer is deprecated. Please use tf.compat.v1.local_variables_initializer instead.
+
+WARNING:tensorflow:From /home/ma-user/modelarts/user-job-dir/code/train.py:94: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+W0329 12:08:36.132542 281472962355568 module_wrapper.py:139] From /home/ma-user/modelarts/user-job-dir/code/train.py:94: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+WARNING:tensorflow:From /home/ma-user/modelarts/user-job-dir/code/train.py:101: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+W0329 12:08:55.515122 281472962355568 module_wrapper.py:139] From /home/ma-user/modelarts/user-job-dir/code/train.py:101: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+WARNING:tensorflow:From /home/ma-user/modelarts/user-job-dir/code/train.py:105: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+W0329 12:08:57.774523 281472962355568 module_wrapper.py:139] From /home/ma-user/modelarts/user-job-dir/code/train.py:105: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+WARNING:tensorflow:From /home/ma-user/modelarts/user-job-dir/code/train.py:105: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+W0329 12:08:57.774876 281472962355568 module_wrapper.py:139] From /home/ma-user/modelarts/user-job-dir/code/train.py:105: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+INFO:tensorflow: step = 0, batch_num=103
+I0329 12:08:57.859086 281472962355568 train.py:114]  step = 0, batch_num=103
+INFO:tensorflow:Time Used===>>>[FP+BP]:14743.023 (ms), [Get Data]:108.203 (ms)
+
+I0329 12:09:12.710641 281472962355568 train.py:133] Time Used===>>>[FP+BP]:14743.023 (ms), [Get Data]:108.203 (ms)
+
+INFO:tensorflow:Time Used===>>>[FP+BP]:45.678 (ms), [Get Data]:96.370 (ms)
+
+I0329 12:09:16.933086 281472962355568 train.py:133] Time Used===>>>[FP+BP]:45.678 (ms), [Get Data]:96.370 (ms)
+
+INFO:tensorflow:Time Used===>>>[FP+BP]:44.847 (ms), [Get Data]:90.948 (ms)
+
+I0329 12:09:21.110385 281472962355568 train.py:133] Time Used===>>>[FP+BP]:44.847 (ms), [Get Data]:90.948 (ms)
+
+INFO:tensorflow:Time Used===>>>[FP+BP]:45.195 (ms), [Get Data]:92.127 (ms)
+
+I0329 12:09:25.310504 281472962355568 train.py:133] Time Used===>>>[FP+BP]:45.195 (ms), [Get Data]:92.127 (ms)
+
+INFO:tensorflow:train_acc = 0.22390777
+I0329 12:09:26.971450 281472962355568 train.py:138] train_acc = 0.22390777
+INFO:tensorflow:train_loss = 1692.5068
+I0329 12:09:26.974863 281472962355568 train.py:139] train_loss = 1692.5068
+INFO:tensorflow: step = 1, batch_num=103
+I0329 12:09:26.975243 281472962355568 train.py:114]  step = 1, batch_num=103
+INFO:tensorflow:Time Used===>>>[FP+BP]:45.730 (ms), [Get Data]:93.997 (ms)
+
+I0329 12:09:27.115211 281472962355568 train.py:133] Time Used===>>>[FP+BP]:45.730 (ms), [Get Data]:93.997 (ms)
+
+INFO:tensorflow:Time Used===>>>[FP+BP]:45.149 (ms), [Get Data]:92.147 (ms)
+
+I0329 12:09:31.298911 281472962355568 train.py:133] Time Used===>>>[FP+BP]:45.149 (ms), [Get Data]:92.147 (ms)
+
+INFO:tensorflow:Time Used===>>>[FP+BP]:45.131 (ms), [Get Data]:92.729 (ms)
+
+I0329 12:09:35.516829 281472962355568 train.py:133] Time Used===>>>[FP+BP]:45.131 (ms), [Get Data]:92.729 (ms)
+
+INFO:tensorflow:Time Used===>>>[FP+BP]:46.586 (ms), [Get Data]:92.412 (ms)
+
+I0329 12:09:39.677561 281472962355568 train.py:133] Time Used===>>>[FP+BP]:46.586 (ms), [Get Data]:92.412 (ms)
+
+INFO:tensorflow:train_acc = 0.2639563
+I0329 12:09:41.332105 281472962355568 train.py:138] train_acc = 0.2639563
+INFO:tensorflow:train_loss = 2.7638366
+I0329 12:09:41.333279 281472962355568 train.py:139] train_loss = 2.7638366
+===>>>Copy Event or Checkpoint from modelarts dir:/cache/result to obs:/home/ma-user/modelarts/outputs/train_url_0/result
