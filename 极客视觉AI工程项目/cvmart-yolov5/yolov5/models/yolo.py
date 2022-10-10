@@ -13,6 +13,7 @@ import platform
 import sys
 from copy import deepcopy
 from pathlib import Path
+from torch.utils.tensorboard import SummaryWriter
 
 FILE = Path(__file__).resolve()
 ROOT = FILE.parents[1]  # YOLOv5 root directory
@@ -335,3 +336,7 @@ if __name__ == '__main__':
 
     else:  # report fused model summary
         model.fuse()
+
+    tb_writer = SummaryWriter(log_dir='/project/train/tensorboard')
+    LOGGER.info("Run 'tensorboard --logdir=models' to view tensorboard at http://localhost:6006/")
+    tb_writer.add_graph(torch.jit.trace(model, strict=False), [])  # add model graph
