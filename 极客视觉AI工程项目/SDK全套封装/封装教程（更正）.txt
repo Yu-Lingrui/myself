@@ -15,11 +15,6 @@ python export.py --data data/coco128.yaml --weights ./yolov5s.pt --simplify --in
 
 
 
-
-
-
-
-
 ## 2、下载封装代码并修改
 	gitee仓库地址：https://gitee.com/cvmart/ev_sdk_demo4.0_vehicle_plate_detection
 	极市地址：https://extremevision-js-userfile.oss-cn-hangzhou.aliyuncs.com/user-14409-files/c0a56641-c6a7-4cc6-ac25-ac1ddf6b57d5/ev_sdk_demo4.0_vehicle_plate_detection-master.zip

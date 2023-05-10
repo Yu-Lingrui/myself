@@ -1,0 +1,74 @@
+1、转换 onnx模型
+yolov5仓库地址（下载v5_6.1版本）： https://github.com/ultralytics/yolov5
+
+1) 配置环境
+# onnx>=1.9.0  # ONNX export
+# onnx-simplifier>=0.3.6 
+2) export.py 导出 onnx
+python export.py --data data/coco128.yaml --weights ./yolov5s.pt --simplify --include onnx
+3) 可视化onnx
+工具网址： https://netron.app
+
+输出维度： box（x_center，y_center，width，height） + box_score + 类别信息
+
+2、下载封装代码并修改
+gitee仓库地址：https://gitee.com/cvmart/ev_sdk_demo4.0_vehicle_plate_detection
+
+极市地址：https://extremevision-js-userfile.oss-cn-hangzhou.aliyuncs.com/user-14409-files/c0a56641-c6a7-4cc6-ac25-ac1ddf6b57d5/ev_sdk_demo4.0_vehicle_plate_detection-master.zip
+
+cp -r ev_sdk_demo4.0_vehicle_plate_detection/* ./ev_sdk/
+
+1）修改配置文件
+ 
+
+- config/algo_config.json
+   "mark_text_en": ["vehicle", "plate"],
+     "mark_text_zh": ["车辆","车牌"], 
+ - src/Configuration.hpp 
+   std::map<std::string, std::vector<std::string> > targetRectTextMap = { {"en",{"vehicle", "plate"}}, {"zh", {"车辆","车牌"}}};// 检测目标框顶部文字
+ - // 修改，定义报警类型    
+   std::vector<int> alarmType = {1,2,3};
+2）修改模型路径
+src/SampleAlgorithm.cpp
+3）修改模型推理
+ - src/SampleDetector.cpp
+m_InputWrappers.emplace_back(dims_i.d[2], dims_i.d[3], CV_32FC1, m_ArrayHostMemory[m_iInputIndex] + 2 * sizeof(float) * dims_i.d[2] * dims_i.d[3]);
+m_InputWrappers.emplace_back(dims_i.d[2], dims_i.d[3], CV_32FC1, m_ArrayHostMemory[m_iInputIndex] + sizeof(float) * dims_i.d[2] * dims_i.d[3] );
+m_InputWrappers.emplace_back(dims_i.d[2], dims_i.d[3], CV_32FC1, m_ArrayHostMemory[m_iInputIndex]);
+  float r = std::min(m_InputSize.height / static_cast<float>(img.rows), m_InputSize.width / static_cast<float>(img.cols));
+  m_Resized.convertTo(m_Normalized, CV_32FC3, 1.0/255);
+ - src/SampleAlgorithm.cpp 修改 ProcessImage 报警逻辑
+
+{
+    auto iter = find(mConfig.alarmType.begin(), mConfig.alarmType.end(), obj.label);
+    if(iter == mConfig.alarmType.end())
+    {
+        continue;
+    }
+3、编译测试
+1）编译
+  - 编译SDK库
+
+    mkdir -p /usr/local/ev_sdk/build
+    cd /usr/local/ev_sdk/build
+    cmake ..
+    make install 
+  - 编译测试工具
+
+    mkdir -p /usr/local/ev_sdk/test/build
+    cd /usr/local/ev_sdk/test/build
+    cmake ..
+    make install
+ 
+
+2）测试
+  - 输入单张图片，需要指定输入输出文件
+
+    /usr/local/ev_sdk/bin/test-ji-api -f 1 -i ../data/vp.jpeg -o result.jpg
+4、提交封装测试
+改好模型目录
+
+models/exp/weights/best.onnx
+省略
+
+/model/exp/weights/best.onnx

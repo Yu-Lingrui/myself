@@ -180,7 +180,13 @@ def run(
                     cv2.resizeWindow(str(p), 1000, 1000)
                 cv2.imshow(str(p), im0)
                 cv2.waitKey(1)  # 1 millisecond
-
+                #k = cv2.waitKey(0)  # waitkey代表读取键盘的输入，括号里的数字代表等待多长时间，单位ms。 0代表一直等待
+                #if k == 27:  # 键盘上Esc键的键值
+                    #break
+                k=cv2.getWindowProperty(str(p), cv2.WINDOW_NORMAL | cv2.WINDOW_KEEPRATIO)
+                if k == -1:  # 关闭按钮
+                    cv2.destroyAllWindows()
+                    break
             # Save results (image with detections)
             if save_img:
                 if dataset.mode == 'image':

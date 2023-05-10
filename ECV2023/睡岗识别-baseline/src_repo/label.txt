@@ -1,0 +1,6 @@
+stand
+sit
+crouch
+prostrate_sleep
+sit_sleep
+lie_sleep
