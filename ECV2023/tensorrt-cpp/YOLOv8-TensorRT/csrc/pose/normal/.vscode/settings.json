@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "*.ipp": "cpp",
+        "memory": "cpp",
+        "istream": "cpp",
+        "functional": "cpp",
+        "tuple": "cpp",
+        "*.tcc": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "system_error": "cpp"
+    }
+}

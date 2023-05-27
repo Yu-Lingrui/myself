@@ -1,5 +1,3 @@
-# 所有权利均属于海康威视
-
 # 算法类-物体实例分割算法(python训练验证)
 
 ## 1、数据预处理
@@ -150,3 +148,10 @@ Soft NMS采用一种更为平滑的筛选规则，修正传统的NMS的暴力去
 多边形轮廓提取完成(取消dnn推理cpp代码中的轮廓提取注释代码即可)，但是运行时间加长，展示demo中没有添加；
 
 <img src="fig/20.png" alt="1" style="zoom:100%;" />
+
+*PS：后续因需求添加VM里面每个目标轮廓坐标单独的提取,解决了异常值和内存泄漏*
+<img src="fig/21.png" alt="1" style="zoom:100%;" />
+
+<img src="fig/22.png" alt="1" style="zoom:100%;" />
+
+<img src="fig/23.png" alt="1" style="zoom:100%;" />
