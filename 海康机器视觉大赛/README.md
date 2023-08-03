@@ -1,3 +1,5 @@
+<img src="fig/a.jpg" alt="1" style="zoom:100%;" />
+<img src="fig/b.jpg" alt="2" style="zoom:100%;" />
 # 算法类-物体实例分割算法(python训练验证)
 
 ## 1、数据预处理
