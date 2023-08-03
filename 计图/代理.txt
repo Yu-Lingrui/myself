@@ -1,0 +1,3 @@
+export http_proxy='http://ac1azwknd8:ac1azwknd8!05@10.13.5.3:3000'
+export https_proxy='http://ac1azwknd8:ac1azwknd8!05@10.13.5.3:3000'
+export ftp_proxy='http://ac1azwknd8:ac1azwknd8!05@10.13.5.3:3000'

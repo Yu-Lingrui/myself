@@ -1,0 +1,7 @@
+*.png
+*.pyc
+*.pkl
+checkpoints/
+__pycache__/
+results/
+*.html

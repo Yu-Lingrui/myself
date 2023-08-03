@@ -232,9 +232,9 @@ void SampleDetector::decode_outputs(float* prob, float thresh, std::vector<BoxIn
             h/=scale;
             std::vector<float> kps;
             for (int k = 0; k < 17; k++) {
-                float kps_x = prob[kps_index];
-                float kps_y = prob[kps_index+1];
-                float kps_s = prob[kps_index+2];
+                float kps_x = prob[kps_index+k*3];
+                float kps_y = prob[kps_index+1+k*3];
+                float kps_s = prob[kps_index+2+k*3];
                 kps_x/=scale;
                 kps_y/=scale;
                 kps.push_back(std::round(kps_x));
